@@ -1,4 +1,4 @@
-package com.mycompany.experimentos.a;
+package com.mycompany.ejercitacion_prog_1_clase_4;
 
 import java.util.Scanner;
 
