@@ -1,10 +1,6 @@
 package com.mycompany.experimentos.a;
 
-import java.text.DateFormat;
-import java.text.NumberFormat;
-import java.util.Date;
-import java.util.Locale;
-import java.util.Scanner;
+import java.util.Arrays;
 
 /**
  *
@@ -12,26 +8,27 @@ import java.util.Scanner;
  */
 public class Experimentos
 {
-    Scanner entrada = new Scanner (System.in);
-
     public static void main(String[] args)
     {
-       verdatoslocale (Locale.getDefault());
-       
-       Locale locale = new Locale("en", "US");
-       
-       verdatoslocale (locale);
-    }
- 
-    public static void verdatoslocale (Locale locale)
-    {
-        System.out.println("Region: " + locale.getDisplayName());
+        int pares [] = new int [50];
+        int pos = 0;
+        int cantpar = 0;
+        int aux = 0;
         
-        DateFormat df = DateFormat.getDateInstance();
-        NumberFormat nf = NumberFormat.getInstance();
+        do
+        {
+            aux++;
+            
+            if (aux % 2 == 0)
+            {
+                pares[pos] = aux;
+                pos++;
+                cantpar++;
+            }
+            
+        } while (cantpar < 50);
         
-        System.out.println("Fecha: " + df.format(new Date()));
-        System.out.println("Hora: " + nf.format(985.6426));
+        System.out.println(Arrays.toString(pares));
         
     }
     
