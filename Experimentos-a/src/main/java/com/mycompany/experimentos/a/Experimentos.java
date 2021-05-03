@@ -1,6 +1,6 @@
 package com.mycompany.experimentos.a;
 
-import java.util.Arrays;
+
 
 /**
  *
@@ -10,25 +10,11 @@ public class Experimentos
 {
     public static void main(String[] args)
     {
-        int pares [] = new int [50];
-        int pos = 0;
-        int cantpar = 0;
-        int aux = 0;
+        int numero;
         
-        do
-        {
-            aux++;
-            
-            if (aux % 2 == 0)
-            {
-                pares[pos] = aux;
-                pos++;
-                cantpar++;
-            }
-            
-        } while (cantpar < 50);
+        numero = 431464755;
         
-        System.out.println(Arrays.toString(pares));
+        System.out.println(numero);
         
     }
     
