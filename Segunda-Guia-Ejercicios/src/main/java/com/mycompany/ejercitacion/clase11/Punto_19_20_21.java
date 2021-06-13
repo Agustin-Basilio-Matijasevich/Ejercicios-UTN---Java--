@@ -8,7 +8,17 @@ public class Punto_19_20_21
 {
     public static void main(String[] args)
     {
-        
+        Empresa mercadoLibre= new Empresa("Mercado Libre", 30);
+
+        mercadoLibre.nuevoEmpleado("Perez", 25000);
+
+        mercadoLibre.nuevoEmpleado("Gomez", 30000);
+
+        mercadoLibre.nuevoEmpleado("Gonzalez", 75000);
+
+        Empleado gomez = mercadoLibre.getEmpleado(1);
+
+        System.out.println(gomez);
     }
     
 }
