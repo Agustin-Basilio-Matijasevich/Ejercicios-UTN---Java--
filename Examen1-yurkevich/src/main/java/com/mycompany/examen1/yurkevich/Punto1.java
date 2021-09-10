@@ -1,6 +1,8 @@
 package com.mycompany.examen1.yurkevich;
 
 import java.util.Scanner;
+import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -10,6 +12,7 @@ public class Punto1
 {
     public static void main(String[] args)
     {
+        JOptionPane.showMessageDialog(null, "Hola");
         //Protocolo de entrada
         Scanner entrada = new Scanner (System.in);
         
