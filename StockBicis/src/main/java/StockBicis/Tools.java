@@ -8,11 +8,10 @@ import java.util.Scanner;
  */
 public class Tools
 {
+    private final Scanner in = new Scanner(System.in);
+    
     public Bicicleta generarBici()
     {
-        //Variables
-        Scanner in = new Scanner(System.in);
-        
         //Menu
         while (true)
         {
@@ -153,7 +152,7 @@ public class Tools
     
     public int selecListElement(Lista lista)  //Retorna 0 por defecto (No llamar con una lista vacia genera exception)
     {
-        Scanner in = new Scanner(System.in);
+        //Variables
         int cantE, select;
         
         System.out.println("Lista de Elementos:");
@@ -178,7 +177,7 @@ public class Tools
     
     public void useOrMaintance(Bicicleta bici)
     {
-        Scanner in = new Scanner(System.in);
+        //Variables
         int option;
         
         do
