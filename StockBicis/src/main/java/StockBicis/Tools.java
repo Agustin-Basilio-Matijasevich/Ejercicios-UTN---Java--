@@ -41,9 +41,9 @@ public class Tools
                     while(true)
                     {
                         String Tipo, Marca, Rodado, Cuadro, Cambios;
-                        
+                        Tipo = in.nextLine();  //Reparacion de bug. Su ejecucion se ve ignorada y corrije un bug del metodo nextLine
                         do
-                        {                            
+                        {   System.out.println("");
                             System.out.println("Ingrese Tipo, Puede ser {MTB/Ruta/City/Utilitaria}");
                             Tipo = in.nextLine();
                         } while (!"MTB".equals(Tipo) && !"Ruta".equals(Tipo) && !"City".equals(Tipo) && !"Utilitaria".equals(Tipo));
@@ -88,9 +88,9 @@ public class Tools
                     {
                         String Tipo, Marca, Rodado, Cuadro, Cambios;
                         int Estado, Suciedad;
-                        
+                        Tipo = in.nextLine();  //Reparacion de bug. Su ejecucion se ve ignorada y corrije un bug del metodo nextLine
                         do
-                        {                            
+                        {   System.out.println("");
                             System.out.println("Ingrese Tipo, Puede ser {MTB/Ruta/City/Utilitaria}");
                             Tipo = in.nextLine();
                         } while (!"MTB".equals(Tipo) && !"Ruta".equals(Tipo) && !"City".equals(Tipo) && !"Utilitaria".equals(Tipo));
@@ -166,7 +166,7 @@ public class Tools
         else
         {
             do
-            {            
+            {   System.out.println("");
                 System.out.println("Seleccione un elemento de la lista");
                 select = in.nextInt();
             } while (select < 0 || select > (cantE-1));
@@ -184,7 +184,7 @@ public class Tools
         do
         {
             do
-            {            
+            {   System.out.println("");
                 System.out.println("Ingrese 1 para Usar la bicicleta");
                 System.out.println("Ingrese 2 para realizar Mantenimiento a la bicicleta");
                 System.out.println("Ingrese 3 para Limpiar la bicicleta");
@@ -200,6 +200,7 @@ public class Tools
                 case 3: bici.lavar();break;
             }
             
+            System.out.println("");
             System.out.println("Ingrese 1 para realizar otra tarea sobre la misma bici o ingrese otro NUMERO para volver al menu principal");
             
             option = in.nextInt();

@@ -24,6 +24,7 @@ public class Main
             int opcion;
             
             //Menu Principal
+            System.out.println("");
             System.out.println("Ingrese 1 para Añadir una bicicleta");
             System.out.println("Ingrese 2 para Eliminar una bicicleta");
             System.out.println("Ingrese 3 para Usar o Mantener una bicicleta");
@@ -44,16 +45,19 @@ public class Main
             {
                 case 1:
                 {
+                    System.out.println("");
                     lista.añadirBici(tools.generarBici());
                     break;
                 }
                 case 2:
                 {
+                    System.out.println("");
                     lista.eliminarBici(tools.selecListElement(lista));
                     break;
                 }
                 case 3:
                 {
+                    System.out.println("");
                     if (lista.getSize() == 0)
                     {
                         System.out.println("No hay bicis en stock");
@@ -68,6 +72,7 @@ public class Main
                 }
                 case 4:
                 {
+                    System.out.println("");
                     int cantE;
                     
                     cantE = lista.listar();
@@ -86,6 +91,7 @@ public class Main
             
             if (opcion == 5)
             {
+                System.out.println("");
                 System.out.println("Gracias, vuelva prontos");
                 break;
             }
