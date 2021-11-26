@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Bicicleta">
+  <ClassDiagramComponents>
+    <Class name="Bicicleta" package="BICI_V1" visibility="public" xPosition="141.0" yPosition="134.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private" isFinal="true"/>
+        <Field name="tipo" type="Tipo" visibility="private" isFinal="true"/>
+        <Field name="marca" type="String" visibility="private" isFinal="true"/>
+        <Field name="rodado" type="Rodado" visibility="private" isFinal="true"/>
+        <Field name="cuadro" type="Cuadro" visibility="private" isFinal="true"/>
+        <Field name="cambios" type="String" visibility="private" isFinal="true"/>
+        <Field name="estado" type="int" visibility="private"/>
+        <Field name="suciedad" type="int" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Tipo" name="tipo"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="Rodado" name="rodado"/>
+          <Argument type="Cuadro" name="cuadro"/>
+          <Argument type="String" name="cambios"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Tipo" name="tipo"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="Rodado" name="rodado"/>
+          <Argument type="Cuadro" name="cuadro"/>
+          <Argument type="String" name="cambios"/>
+          <Argument type="int" name="estado"/>
+          <Argument type="int" name="suciedad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getTipo" returnType="Tipo" visibility="public"/>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="getRodado" returnType="Rodado" visibility="public"/>
+        <Method name="getCuadro" returnType="Cuadro" visibility="public"/>
+        <Method name="getCambios" returnType="String" visibility="public"/>
+        <Method name="getEstado" returnType="int" visibility="public"/>
+        <Method name="getSuciedad" returnType="int" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setEstado" returnType="void" visibility="public">
+          <Argument type="int" name="estado"/>
+        </Method>
+        <Method name="setSuciedad" returnType="void" visibility="public">
+          <Argument type="int" name="suciedad"/>
+        </Method>
+        <Method name="setId" returnType="void" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="generarBicicleta" returnType="Bicicleta" visibility="public"/>
+        <Method name="usar" returnType="void" visibility="public"/>
+        <Method name="lavar" returnType="void" visibility="public"/>
+        <Method name="mantenimiento" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation source="BICI_V1.Bicicleta" target="BICI_V1.Bicicleta" sourceCardinality="1..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

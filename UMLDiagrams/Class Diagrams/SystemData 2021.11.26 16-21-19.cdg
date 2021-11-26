@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="SystemData">
+  <ClassDiagramComponents>
+    <Class name="SystemData" package="BICI_V1" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="SystemData" type="File" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="leer" returnType="ArrayList" visibility="public"/>
+        <Method name="escribir" returnType="void" visibility="public">
+          <Argument type="ArrayList" name="newData"/>
+        </Method>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

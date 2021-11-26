@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Tipo">
+  <ClassDiagramComponents>
+    <Enum name="Tipo" package="BICI_V1" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Literals>
+        <Literal name="VACIO"/>
+        <Literal name="MTB"/>
+        <Literal name="RUTA"/>
+        <Literal name="CITY"/>
+        <Literal name="UTILITARIA"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>

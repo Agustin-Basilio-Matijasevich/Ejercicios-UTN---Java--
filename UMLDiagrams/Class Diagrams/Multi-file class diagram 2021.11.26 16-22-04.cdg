@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Multi-file class diagram">
+  <ClassDiagramComponents>
+    <Class name="Bicicleta" package="BICI_V1" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Fields>
+        <Field name="nombre" type="String" visibility="private" isFinal="true"/>
+        <Field name="tipo" type="Tipo" visibility="private" isFinal="true"/>
+        <Field name="marca" type="String" visibility="private" isFinal="true"/>
+        <Field name="rodado" type="Rodado" visibility="private" isFinal="true"/>
+        <Field name="cuadro" type="Cuadro" visibility="private" isFinal="true"/>
+        <Field name="cambios" type="String" visibility="private" isFinal="true"/>
+        <Field name="estado" type="int" visibility="private"/>
+        <Field name="suciedad" type="int" visibility="private"/>
+        <Field name="id" type="int" visibility="private"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public"/>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Tipo" name="tipo"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="Rodado" name="rodado"/>
+          <Argument type="Cuadro" name="cuadro"/>
+          <Argument type="String" name="cambios"/>
+        </Constructor>
+        <Constructor visibility="public">
+          <Argument type="String" name="nombre"/>
+          <Argument type="Tipo" name="tipo"/>
+          <Argument type="String" name="marca"/>
+          <Argument type="Rodado" name="rodado"/>
+          <Argument type="Cuadro" name="cuadro"/>
+          <Argument type="String" name="cambios"/>
+          <Argument type="int" name="estado"/>
+          <Argument type="int" name="suciedad"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getNombre" returnType="String" visibility="public"/>
+        <Method name="getTipo" returnType="Tipo" visibility="public"/>
+        <Method name="getMarca" returnType="String" visibility="public"/>
+        <Method name="getRodado" returnType="Rodado" visibility="public"/>
+        <Method name="getCuadro" returnType="Cuadro" visibility="public"/>
+        <Method name="getCambios" returnType="String" visibility="public"/>
+        <Method name="getEstado" returnType="int" visibility="public"/>
+        <Method name="getSuciedad" returnType="int" visibility="public"/>
+        <Method name="getId" returnType="int" visibility="public"/>
+        <Method name="setEstado" returnType="int" visibility="public">
+          <Argument type="int" name="estado"/>
+        </Method>
+        <Method name="setSuciedad" returnType="int" visibility="public">
+          <Argument type="int" name="suciedad"/>
+        </Method>
+        <Method name="setId" returnType="int" visibility="public">
+          <Argument type="int" name="id"/>
+        </Method>
+        <Method name="generarBicicleta" returnType="Bicicleta" visibility="public"/>
+        <Method name="usar" returnType="void" visibility="public"/>
+        <Method name="lavar" returnType="void" visibility="public"/>
+        <Method name="mantenimiento" returnType="void" visibility="public"/>
+        <Method name="toString" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+    <Class name="InicSystemArch" package="BICI_V1" visibility="public" xPosition="430.0" yPosition="1132.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Interactuar" package="BICI_V1" visibility="public" xPosition="672.0" yPosition="1145.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="Lista" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+          <Argument type="Lista" name="lista"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="SystemData" package="BICI_V1" visibility="public" xPosition="1069.0" yPosition="1097.0">
+      <Fields>
+        <Field name="SystemData" type="File" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="leer" returnType="ArrayList" visibility="public"/>
+        <Method name="escribir" returnType="ArrayList" visibility="public">
+          <Argument type="ArrayList" name="newData"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Enum name="Cuadro" package="BICI_V1" visibility="public" xPosition="929.0" yPosition="550.0">
+      <Literals>
+        <Literal name="VACIO"/>
+        <Literal name="SUPERCHICO"/>
+        <Literal name="CHICO"/>
+        <Literal name="MEDIANO"/>
+        <Literal name="GRANDE"/>
+        <Literal name="ULTAGRANDE"/>
+      </Literals>
+    </Enum>
+    <Enum name="Rodado" package="BICI_V1" visibility="public" xPosition="911.0" yPosition="38.0">
+      <Literals>
+        <Literal name="VACIO"/>
+        <Literal name="CHICO"/>
+        <Literal name="MEDIANO"/>
+        <Literal name="GRANDE"/>
+      </Literals>
+    </Enum>
+    <Enum name="Tipo" package="BICI_V1" visibility="public" xPosition="1196.0" yPosition="165.0">
+      <Literals>
+        <Literal name="VACIO"/>
+        <Literal name="MTB"/>
+        <Literal name="RUTA"/>
+        <Literal name="CITY"/>
+        <Literal name="UTILITARIA"/>
+      </Literals>
+    </Enum>
+    <Class name="EjecutableSistema" package="" visibility="public" xPosition="31.0" yPosition="798.0">
+      <Fields/>
+      <Constructors/>
+      <Methods>
+        <Method name="main" returnType="String[]" visibility="public" isStatic="true">
+          <Argument type="String[]" name="args"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Class name="Lista" package="" visibility="public" xPosition="1069.0" yPosition="752.0">
+      <Fields>
+        <Field name="lista" type="ArrayList" visibility="private" isFinal="true"/>
+        <Field name="bicicleta" type="Bicicleta" visibility="private" isFinal="true"/>
+        <Field name="in" type="Scanner" visibility="private" isFinal="true"/>
+      </Fields>
+      <Constructors>
+        <Constructor visibility="public">
+          <Argument type="ArrayList" name="lista"/>
+        </Constructor>
+      </Constructors>
+      <Methods>
+        <Method name="getBicicleta" returnType="Bicicleta" visibility="public">
+          <Argument type="int" name="target"/>
+        </Method>
+        <Method name="setBicicleta" returnType="void" visibility="public">
+          <Argument type="Bicicleta" name="data"/>
+          <Argument type="int" name="posicion"/>
+        </Method>
+        <Method name="getArrayList" returnType="ArrayList" visibility="public"/>
+        <Method name="listar" returnType="int" visibility="public"/>
+        <Method name="anadirBicicleta" returnType="void" visibility="public"/>
+        <Method name="eliminarBicicleta" returnType="void" visibility="public"/>
+        <Method name="busquedaPorTipo" returnType="ArrayList" visibility="public">
+          <Argument type="Tipo" name="tipo"/>
+        </Method>
+        <Method name="tostring" returnType="String" visibility="public"/>
+      </Methods>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <UseRelation name="" source="BICI_V1.Interactuar" target="BICI_V1.Tipo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="Lista" target="BICI_V1.Bicicleta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="BICI_V1.Bicicleta" target="BICI_V1.Cuadro" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="rodado" source="BICI_V1.Bicicleta" target="BICI_V1.Rodado" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="BICI_V1.Bicicleta" target="BICI_V1.Bicicleta" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="BICI_V1.Interactuar" target="Lista" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Main" source="EjecutableSistema" target="BICI_V1.Interactuar" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <UseRelation source="BICI_V1.Bicicleta" target="BICI_V1.Tipo" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="EjecutableSistema" target="Lista" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation source="BICI_V1.Bicicleta" target="BICI_V1.Rodado" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <UseRelation name="" source="EjecutableSistema" target="BICI_V1.SystemData" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="tipo" source="BICI_V1.Bicicleta" target="BICI_V1.Tipo" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="cuadro" source="BICI_V1.Bicicleta" target="BICI_V1.Cuadro" type="Aggregation" sourceCardinality="1..1" targetCardinality="1..1"/>
+    <HasRelation name="Main" source="EjecutableSistema" target="BICI_V1.InicSystemArch" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+  </ClassDiagramRelations>
+</ClassDiagram>

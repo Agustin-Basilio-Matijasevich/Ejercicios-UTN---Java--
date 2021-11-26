@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Cuadro">
+  <ClassDiagramComponents>
+    <Enum name="Cuadro" package="BICI_V1" visibility="public" xPosition="20.0" yPosition="20.0">
+      <Literals>
+        <Literal name="VACIO"/>
+        <Literal name="SUPERCHICO"/>
+        <Literal name="CHICO"/>
+        <Literal name="MEDIANO"/>
+        <Literal name="GRANDE"/>
+        <Literal name="ULTAGRANDE"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations/>
+</ClassDiagram>
