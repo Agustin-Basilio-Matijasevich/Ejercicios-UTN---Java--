@@ -1,0 +1,11 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="Bicis_V1:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Bicis_V1_jar</output-path>
+    <root id="archive" name="Bicis_V1.jar">
+      <element id="module-output" name="Bicis_V1" />
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/src/main/java/META-INF/MANIFEST.MF" />
+      </element>
+    </root>
+  </artifact>
+</component>
