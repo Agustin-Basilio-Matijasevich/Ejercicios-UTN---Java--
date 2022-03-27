@@ -1,0 +1,101 @@
+@startuml
+enum BICI_V1.Rodado {
++  VACIO
++  CHICO
++  MEDIANO
++  GRANDE
+- String screenName
+- <<Create>> Rodado(String)
+- String getScreenName()
++ Rodado selectRodado()
++ String toString()
+}
+class BICI_V1.Lista {
+- ArrayList lista
+- Bicicleta bicicleta
+- Scanner in
++ <<Create>> Lista(ArrayList)
++ Bicicleta getBicicleta(int)
++ void setBicicleta(Bicicleta,int)
++ ArrayList getArrayList()
++ int listar()
++ void añadirBicicleta()
++ void eliminarBicicleta()
++ ArrayList busquedaPorTipo(Tipo)
++ String toString()
+}
+class BICI_V1.Interactuar {
++ {static} void main(String[],Lista)
+}
+class BICI_V1.EjecutableSistema {
++ {static} void main(String[])
+}
+class BICI_V1.InicSystemArch {
++ {static} void main(String[])
+}
+class BICI_V1.Bicicleta {
+- String nombre
+- Tipo tipo
+- String marca
+- Rodado rodado
+- Cuadro cuadro
+- String cambios
+- int estado
+- int suciedad
+- int id
++ <<Create>> Bicicleta()
++ <<Create>> Bicicleta(String,Tipo,String,Rodado,Cuadro,String)
++ <<Create>> Bicicleta(String,Tipo,String,Rodado,Cuadro,String,int,int)
++ String getNombre()
++ Tipo getTipo()
++ String getMarca()
++ Rodado getRodado()
++ Cuadro getCuadro()
++ String getCambios()
++ int getEstado()
++ int getSuciedad()
++ int getId()
++ void setEstado(int)
++ void setSuciedad(int)
++ void setId(int)
++ Bicicleta generarBicicleta()
++ void usar()
++ void lavar()
++ void mantenimiento()
++ String toString()
+}
+enum BICI_V1.Cuadro {
++  VACIO
++  SUPERCHICO
++  CHICO
++  MEDIANO
++  GRANDE
++  ULTAGRANDE
+- String screenName
+- <<Create>> Cuadro(String)
+- String getScreenName()
++ Cuadro selectCuadro()
++ String toString()
+}
+enum BICI_V1.Tipo {
++  VACIO
++  MTB
++  RUTA
++  CITY
++  UTILITARIA
+- String screenName
+- <<Create>> Tipo(String)
+- String getScreenName()
++ Tipo selectTipo()
++ String toString()
+}
+class BICI_V1.SystemData {
+- File SystemData
++ ArrayList leer()
++ void escribir(ArrayList)
+}
+
+
+java.io.Serializable <|.. BICI_V1.Bicicleta
+BICI_V1.Bicicleta ||-- BICI_V1.Tipo
+@enduml
