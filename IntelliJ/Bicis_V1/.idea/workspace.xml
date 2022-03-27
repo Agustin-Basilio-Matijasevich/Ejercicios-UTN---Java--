@@ -10,13 +10,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecf75eff-062f-4370-81b6-1816b6378377" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/SystemData.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Stock_Bicis/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Stock_Bicis/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Stock_Bicis/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/SystemData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/SystemData.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bicis_V1_jar/SystemData.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bicis_V1_jar/SystemData.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
