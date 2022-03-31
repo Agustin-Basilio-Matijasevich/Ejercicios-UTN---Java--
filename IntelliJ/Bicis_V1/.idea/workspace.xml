@@ -10,8 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ecf75eff-062f-4370-81b6-1816b6378377" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/UML_Bici_V1.puml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/Bicis_V1_jar/Run-on-Linux.sh" beforeDir="false" afterPath="$PROJECT_DIR$/out/artifacts/Bicis_V1_jar/Run-on-Linux.sh" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
